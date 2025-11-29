@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المسافرون السعوديون - شريكك المفضل للسفر إلى أوروبا</title>
+    
+    <meta name="description" content="المسافرون السعوديون - متخصصون في تأشيرات الشنغن وحجوزات الطيران. جميع حلول السفر تحت سقف واحد.">
+    <meta name="keywords" content="المسافرون السعوديون, تأشيرة الشنغن, حجوزات طيران, سفر إلى أوروبا, سياحة">
+    <meta name="author" content="المسافرون السعوديون">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="المسافرون السعوديون - شريكك المفضل للسفر إلى أوروبا">
+    <meta property="og:description" content="متخصصون في تأشيرات الشنغن وحجوزات الطيران">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.postimg.cc/k4PknVys/Round-Photo-Nov292025-012428.png">
+    <meta property="og:url" content="https://saudi-travelers.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.postimg.cc/k4PknVys/Round-Photo-Nov292025-012428.png">
+    
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net; 
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; 
+                   font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+                   img-src 'self' data: https:; connect-src 'self' https://saudi-travelers.com;
+                   frame-src 'self' https://www.google.com; 
+                   ">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0A2E50">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/k4PknVys/Round-Photo-Nov292025-012428.png">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <style>
+        /* --- Updated CSS Variables for Saudi Travelers (Matching Logo/Image Theme) --- */
+        :root {
+            --primary-dark-blue: #0A2E50; /* Deep blue from logo text */
+            --secondary-blue: #1A5276;   /* Slightly lighter blue for accents */
+            --accent-light-blue: #40B4D3; /* Lighter blue from wing/wave element */
+            --text-dark: #333333;        /* Darker text for readability */
+            --text-light: #F8F8F8;       /* Near white for contrast on dark backgrounds */
+            --shadow-light: 0 4px 15px rgba(0,0,0,0.08);
+            --shadow-medium: 0 8px 25px rgba(0,0,0,0.15);
+            --shadow-heavy: 0 12px 30px rgba(0,0,0,0.25);
+            --border-radius: 10px;
+            --transition: all 0.3s ease;
+            
+            /* Offer-specific colors (from Image 2) */
+            --offer-green: #4CAF50;    /* Bright green for success/WhatsApp */
+            --offer-text-white: #FFFFFF;
+            --offer-price-color: #E60000; /* Red from price text */
+            --offer-border-color: #61A464; /* Slightly darker green for border */
+        }
+
+        /* --- RTL Base Styles --- */
+        html[dir="rtl"] {
+            text-align: right;
+        }
+
+        .stat-icons {
+            margin-bottom: 5px;
+            height: 12px; 
+            display: flex;
+            justify-content: center;
+        }
+
+        .stat-icons i {
+            font-size: 0.8em; 
+            color: var(--accent-light-blue); /* Changed to light blue accent */
+            margin-left: 3px;
+        }
+
+        /* --- Utility Styles (Cookie/WhatsApp/BackToTop) --- */
+
+        .cookie-banner {
+            display: none; /* Controlled by JS */
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: var(--primary-dark-blue); /* Dark blue background */
+            color: var(--text-light);
+            padding: 15px 25px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+            z-index: 10000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9em;
+            gap: 15px;
+            border-top: 3px solid var(--accent-light-blue); /* Light blue border */
+        }
+
+        .cookie-banner p {
+            margin: 0;
+            flex-grow: 1;
+            text-align: inherit; /* Inherits from HTML dir */
+        }
+
+        .cookie-banner .cta-button {
+            flex-shrink: 0;
+            padding: 10px 20px;
+            font-size: 0.9em;
+            margin-top: 0;
+            background: var(--accent-light-blue); /* Light blue CTA button */
+            color: var(--primary-dark-blue);
+        }
+        .cookie-banner .cta-button:hover {
+            background: var(--secondary-blue);
+            color: var(--text-light);
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px; /* Positioned left for RTL site */
+            background: var(--accent-light-blue); /* Light blue */
+            color: var(--primary-dark-blue);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: var(--shadow-medium);
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+
+        .back-to-top:hover {
+            background: var(--secondary-blue); /* Darker blue on hover */
+            color: var(--text-light);
+            transform: translateY(-5px);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px; /* Positioned right for RTL site */
+            background: var(--offer-green); /* Use the green from the offer image */
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: var(--shadow-heavy);
+            transition: var(--transition);
+            z-index: 998;
+        }
+
+        .whatsapp-float:hover {
+            background: #43A047; /* Slightly darker green */
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .whatsapp-widget {
+            display: none;
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 300px;
+            max-width: 90%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-heavy);
+            z-index: 997;
+            overflow: hidden;
+            font-family: 'Noto Sans Arabic', sans-serif;
+        }
+
+        .chat-header {
+            background: var(--primary-dark-blue); /* Dark blue header */
+            color: white;
+            padding: 15px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-header button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .chat-body {
+            padding: 20px;
+            text-align: inherit;
+        }
+
+        .chat-body p {
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .quick-replies {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .quick-replies button {
+            background: #f0f0f0;
+            color: var(--primary-dark-blue); /* Dark blue text */
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: inherit;
+            transition: var(--transition);
+            font-family: 'Noto Sans Arabic', sans-serif;
+            font-size: 0.9em;
+        }
+
+        .quick-replies button:hover {
+            background: var(--primary-dark-blue); /* Dark blue on hover */
+            color: white;
+            border-color: var(--primary-dark-blue);
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px; /* Positioned right for RTL */
+            padding: 15px 50px 15px 20px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 10001;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.3s ease-out;
+            max-width: 80%;
+            text-align: inherit;
+        }
+
+        .notification.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .notification.success {
+            background: var(--offer-green); /* Green for success */
+        }
+
+        .notification.error {
+            background: var(--offer-price-color); /* Red for error */
+        }
+
+        .notification.info {
+            background: var(--primary-dark-blue); /* Dark blue for info */
+        }
+
+        /* --- سموث سكرولينغ --- */
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        /* --- أساسيات التنسيق --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Arabic', sans-serif;
+            background-color: var(--text-light); /* Light background */
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--primary-dark-blue); /* Dark blue heading */
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            border-bottom: 3px solid var(--accent-light-blue); /* Light blue border */
+            display: inline-block;
+            padding-bottom: 10px;
+            font-weight: 900;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* --- الهيدر والتنقل (PADDINGS UPDATED HERE FOR DESKTOP) --- */
+        header {
+            /* ** DESKTOP UPDATE: MORE SPACE ** */
+            padding: 30px 0 20px; 
+            /* ** END DESKTOP UPDATE ** */
+            background: linear-gradient(135deg, var(--primary-dark-blue) 0%, var(--secondary-blue) 100%); /* Blue gradient */
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* ** ADDED MARGIN FOR TEXT/IMAGE SEPARATION ** */
+            margin: 5px 0 5px 0;
+            z-index: 1001;
+            position: relative;
+        }
+
+        .logo-container img {
+            height: 60px;
+            width: auto;
+            border-radius: 12px;
+            /* ** ADDED MARGIN FOR TEXT/IMAGE SEPARATION ** */
+            margin-bottom: 5px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: var(--transition);
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-container .logo-text {
+            font-size: 1.4em;
+            font-weight: 900;
+            color: var(--accent-light-blue); /* Light blue from logo */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 0.5px;
+            padding: 0 5px;
+            background: none;
+            line-height: 1.1;
+            white-space: nowrap;
+        }
+
+        .contact-bar { 
+            text-align: center;
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-bar a { 
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition);
+            padding: 8px 16px;
+            border-radius: 25px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-bar a:hover {
+            color: var(--accent-light-blue); /* Light blue on hover */
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .whatsapp-icon { 
+            color: var(--offer-green); /* Green for whatsapp */
+        }
+
+        /* --- أزرار اللغة --- */
+        .lang-switcher {
+            font-size: 1em;
+            margin-bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .lang-button {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 6px 12px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: var(--transition);
+            cursor: pointer;
+            font-weight: 700;
+            backdrop-filter: blur(10px);
+        }
+
+        .lang-button:hover, .lang-button.active {
+            background-color: var(--accent-light-blue); /* Light blue on active/hover */
+            color: var(--primary-dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(64,180,211,0.3); /* Shadow for light blue */
+        }
+
+        /* --- قسم البطل --- */
+        #hero {
+            background: linear-gradient(135deg, rgba(10,46,80,0.9) 0%, rgba(64,180,211,0.8) 100%), url('https://images.unsplash.com/photo-1542831371-29b0f74f94c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 120px 15px;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        #hero h1 { 
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 900;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+            line-height: 1.2;
+        }
+
+        #hero p {
+            font-size: 1.3em;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+            line-height: 1.6;
+        }
+
+        /* --- أزرار CTA --- */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-light-blue) 0%, var(--secondary-blue) 100%); /* Light to secondary blue gradient */
+            color: var(--primary-dark-blue);
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.4em;
+            font-weight: 900;
+            transition: var(--transition);
+            margin-top: 30px;
+            box-shadow: 0 8px 25px rgba(64,180,211,0.4);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+
+        .cta-button:hover:before {
+            right: 100%;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-dark-blue) 100%); /* Reversed gradient on hover */
+            box-shadow: 0 12px 35px rgba(64,180,211,0.6);
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        /* --- شارة العروض (From Image 2) --- */
+        @keyframes flash { 
+            0%, 50%, 100% { 
+                opacity: 1;
+                transform: scale(1);
+            } 
+            25%, 75% { 
+                opacity: 0.7;
+                transform: scale(1.05);
+            } 
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        .offer-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, var(--offer-green) 0%, var(--offer-border-color) 100%); /* Green gradient from image 2 */
+            color: var(--offer-text-white);
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 1.1em;
+            animation: flash 2s infinite, bounce 3s infinite;
+            z-index: 10;
+            box-shadow: 0 4px 15px rgba(76,175,80,0.4); /* Shadow for green */
+        }
+
+        /* --- قسم الإحصائيات --- */
+        #stats { 
+            background: linear-gradient(135deg, var(--primary-dark-blue) 0%, var(--secondary-blue) 100%); /* Blue gradient */
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            overflow: hidden;
+            gap: 10px;
+        }
+
+        #stats:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-size: cover;
+        }
+
+        .stat-item { 
+            padding: 15px 10px;
+            position: relative;
+            z-index: 2;
+            flex: 1 1 calc(33.33% - 10px);
+            max-width: calc(33.33% - 10px);
+            text-align: center;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        .stat-number { 
+            font-size: 3.5em;
+            font-weight: 900;
+            color: var(--accent-light-blue); /* Light blue for numbers */
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.1;
+        }
+
+        .stat-text {
+            font-size: 1.3em;
+            font-weight: 700;
+            opacity: 0.9;
+        }
+
+        /* --- قسم لماذا تختارنا --- */
+        #why-us {
+             background: #FFFFFF;
+             padding: 80px 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-card { 
+            padding: 30px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: var(--shadow-light);
+            transition: var(--transition);
+            background: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(135deg, var(--accent-light-blue) 0%, var(--primary-dark-blue) 100%); /* Blue gradient */
+        }
+
+        .feature-card:hover { 
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .feature-card i {
+            font-size: 3em;
+            color: var(--accent-light-blue); /* Light blue icon */
+            background: linear-gradient(135deg, var(--accent-light-blue) 0%, var(--primary-dark-blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* --- قسم الباقات --- */
+        #services {
+             background: #f0f8ff; /* Very light blue background for contrast */
+             padding: 80px 0;
+        }
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .package-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-medium);
+            text-align: right;
+            transition: var(--transition);
+            background: white;
+            position: relative;
+        }
+
+        .package-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(135deg, var(--accent-light-blue) 0%, var(--primary-dark-blue) 100%); /* Blue gradient */
+            z-index: 2;
+        }
+
+        .package-card:hover { 
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .package-card img { 
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .package-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .package-content { 
+            padding: 25px;
+        }
+
+        .package-content h4 { 
+            color: var(--primary-dark-blue); /* Dark blue heading */
+            font-size: 1.6em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+
+        .price { 
+            font-size: 2.2em;
+            color: var(--offer-price-color); /* Red price from image 2 */
+            font-weight: 900;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, var(--offer-price-color) 0%, #CC0000 100%); /* Red gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .package-content ul { 
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .package-content li { 
+            margin-bottom: 12px;
+            font-size: 1em;
+            display: flex;
+            align-items: flex-start;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .package-content li:last-child {
+            border-bottom: none;
+        }
+
+        .package-content li i {
+            margin-left: 12px;
+            color: var(--accent-light-blue); /* Light blue icon */
+            min-width: 20px;
+            font-size: 1.1em;
+        }
+
+        .package-cta {
+            background: linear-gradient(135deg, var(--offer-green) 0%, var(--offer-border-color) 100%); /* Green gradient */
+            color: white;
+            display: block;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition);
+            border-radius: 10px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .package-cta:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+
+        .package-cta:hover:before {
+            right: 100%;
+        }
+
+        .package-cta:hover { 
+            background: linear-gradient(135deg, var(--offer-border-color) 0%, var(--offer-green) 100%); /* Reversed green gradient */
+            box-shadow: 0 6px 20px rgba(76,175,80,0.4);
+            transform: translateY(-3px);
+        }
+
+        /* --- قسم آراء العملاء --- */
+        #testimonials {
+            background: linear-gradient(135deg, #f7fcff 0%, #e0f2f7 100%); /* Light blueish background */
+            border-top: 5px solid var(--accent-light-blue); /* Light blue border */
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        #testimonials:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,100 L100,0 L100,100 Z" fill="rgba(64,180,211,0.05)"/></svg>');
+            background-size: cover;
+        }
+
+        #testimonials .quote-box {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            font-style: italic;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-medium);
+            position: relative;
+            z-index: 2;
+            border-right: 5px solid var(--accent-light-blue); /* Light blue quote border */
+        }
+
+        #testimonials .quote-box:before {
+            content: """;
+            font-size: 80px;
+            color: var(--accent-light-blue); /* Light blue quote icon */
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            opacity: 0.2;
+            font-family: serif;
+        }
+
+        /* --- قسم الاتصال --- */
+        #contact { 
+            background: linear-gradient(135deg, var(--primary-dark-blue) 0%, #000 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        #contact:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,100 L0,100 Z" fill="rgba(64,180,211,0.1)"/></svg>');
+            background-size: cover;
+        }
+
+        #contact .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        #contact input, #contact select, #contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-family: 'Noto Sans Arabic', sans-serif;
+            font-size: 1em;
+            background: rgba(255,255,255,0.95);
+            transition: var(--transition);
+            text-align: right;
+            color: var(--text-dark); /* Ensure input text is readable dark color */
+        }
+
+        #contact input:focus, #contact select:focus, #contact textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(64,180,211,0.5); /* Light blue focus shadow */
+            transform: translateY(-2px);
+        }
+
+        #contact button[type="submit"] {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, var(--accent-light-blue) 0%, var(--secondary-blue) 100%); /* Blue gradient */
+            color: var(--primary-dark-blue);
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.2em;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #contact button[type="submit"]:hover { 
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-dark-blue) 100%); /* Reversed blue gradient on hover */
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(64,180,211,0.4);
+        }
+
+        .contact-info {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 15px 0;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #map-frame {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 15px;
+            margin: 25px 0;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .map-link {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--offer-green) 0%, var(--offer-border-color) 100%); /* Green map link */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 15px;
+            transition: var(--transition);
+            font-weight: 700;
+        }
+
+        .map-link:hover {
+            background: linear-gradient(135deg, var(--offer-border-color) 0%, var(--offer-green) 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(76,175,80,0.4);
+        }
+
+        /* --- الفوتر --- */
+        footer { 
+            background: linear-gradient(135deg, #212121 0%, #000 100%);
+            color: #aaa;
+            text-align: center;
+            padding: 40px 0 20px;
+            font-size: 0.9em;
+            position: relative;
+        }
+
+        footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(135deg, var(--accent-light-blue) 0%, var(--primary-dark-blue) 100%); /* Blue footer border */
+        }
+
+        .dev-info { 
+            color: var(--accent-light-blue); /* Light blue footer text */
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: 1em;
+        }
+
+        /* --- ختم الثقة --- */
+        .trust-seal {
+            background: linear-gradient(135deg, var(--offer-green) 0%, var(--offer-border-color) 100%); /* Green trust seal */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(76,175,80,0.3);
+            animation: bounce 3s infinite;
+        }
+
+        /* --- تعديلات الجوال (PADDINGS UPDATED HERE FOR MOBILE) --- */
+        @media (max-width: 768px) {
+            #hero h1 { font-size: 2.2em; }
+            #hero p { font-size: 1.1em; }
+            
+            header {
+                /* ** FINAL MOBILE UPDATE: EXTRA SPACE (Changed from 25px to 35px) ** */
+                padding: 35px 0 20px; /* উপরে 35px এবং নীচে 20px প্যাডিং */
+                /* ** End of change ** */
+            }
+            .header-content {
+                gap: 5px;
+            }
+            .logo-container {
+                 /* ** সামান্য টপ মার্জিন নিশ্চিত করা হলো ** */
+                margin-top: 5px; 
+            }
+            .logo-container img {
+                height: 50px;
+                margin-bottom: 0px;
+            }
+            .logo-container .logo-text {
+                font-size: 1.2em;
+            }
+            .contact-bar {
+                margin-top: 5px;
+                gap: 8px;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .contact-bar a { 
+                padding: 6px 12px;
+                font-size: 0.9em;
+            }
+            .lang-switcher { 
+                font-size: 0.9em;
+                margin-bottom: 0;
+            }
+            
+            .stat-item { 
+                flex: 1 1 calc(33.33% - 10px);
+                max-width: calc(33.33% - 10px);
+                padding: 10px 5px;
+                text-align: center;
+            }
+            .stat-number { 
+                font-size: 2.2em;
+            }
+            .stat-text {
+                font-size: 0.9em;
+            }
+            
+            .offer-badge { 
+                position: static;
+                margin-bottom: 20px;
+                display: inline-block;
+                font-size: 0.9em;
+            }
+            .feature-card { 
+                width: 100%;
+                max-width: 100%;
+                padding: 20px;
+            }
+            h2 { 
+                font-size: 1.8em;
+                margin-bottom: 30px;
+            }
+            
+            .packages-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .package-card {
+                margin-bottom: 20px;
+            }
+            
+            .whatsapp-widget {
+                width: calc(100% - 40px);
+                left: 20px;
+                right: 20px;
+                bottom: 80px;
+            }
+            
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                bottom: 20px;
+                left: 20px;
+                font-size: 24px;
+            }
+            
+            .back-to-top {
+                bottom: 90px;
+                left: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+            
+            section {
+                padding: 50px 0;
+            }
+            
+            .container {
+                width: 95%;
+                padding: 0 10px;
+            }
+        }
+    </style>
+    </head>
+<body>
+
+    <div id="cookieConsent" class="cookie-banner">
+        <p data-ar="نستخدم ملفات تعريف الارتباط لتحسين تجربتك. باستخدام هذا الموقع، فإنك تقبل سياستنا للكوكيز." 
+           data-en="We use cookies to enhance your experience. By using this site you accept our cookie policy." 
+           data-bn="আমরা আপনার অভিজ্ঞতা উন্নত করতে কুকি ব্যবহার করি। এই সাইট ব্যবহার করে আপনি আমাদের কুকি নীতি মেনে নিচ্ছেন।">
+           نستخدم ملفات تعريف الارتباط لتحسين تجربتك. باستخدام هذا الموقع، فإنك تقبل سياستنا للكوكيز.
+        </p>
+        <button id="acceptCookies" class="cta-button" data-ar="قبول" data-en="Accept" data-bn="স্বীকার করুন">قبول</button>
+    </div>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <div class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <div class="chat-header">
+            <span data-ar="تحدث معنا" data-en="Chat with us" data-bn="আমাদের সাথে চ্যাট করুন">تحدث معنا</span>
+            <button id="close-chat">×</button>
+        </div>
+        <div class="chat-body">
+            <p data-ar="كيف يمكننا مساعدتك؟" data-en="How can we help you?" data-bn="কীভাবে আমরা আপনাকে সাহায্য করতে পারি?">كيف يمكننا مساعدتك؟</p>
+            <div class="quick-replies">
+                <button data-message="أريد الاستفسار عن تذاكر الطيران" data-ar="✈️ تذاكر الطيران" data-en="✈️ Air Tickets" data-bn="✈️ বিমান টিকেট">✈️ تذاكر الطيران</button>
+                <button data-message="أريد الاستفسار عن تأشيرة الشنغن" data-ar="🛂 تأشيرة الشنغن" data-en="🛂 Schengen Visa" data-bn="🛂 ভিসা প্রসেসিং">🛂 تأشيرة الشنغن</button>
+                <button data-message="أريد الاستفسار عن باقات أوروبا" data-ar="🗺️ باقات أوروبا" data-en="🗺️ Europe Packages" data-bn="💻 ডিজিটাল সার্ভিস">🗺️ باقات أوروبا</button>
+                <button data-message="أريد الاستفسار عن خدمات أخرى" data-ar="💼 خدمات أخرى" data-en="💼 Other Services" data-bn="🕋 ওমরাহ ভিসা">💼 خدمات أخرى</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header-content"> 
+                <div class="lang-switcher">
+                    <a href="#" class="lang-button" data-lang="ar" aria-label="التغيير إلى العربية">العربية</a>
+                    <a href="#" class="lang-button" data-lang="en" aria-label="Change to English">English</a>
+                    <a href="#" class="lang-button" data-lang="bn" aria-label="বাংলা ভাষায় পরিবর্তন করুন">বাংলা</a>
+                </div>
+                
+                <div class="logo-container"> 
+                    <img src="https://i.postimg.cc/k4PknVys/Round-Photo-Nov292025-012428.png" alt="شعار المسافرون السعوديون" loading="eager">
+                    <span class="logo-text" data-ar="المسافرون السعوديون للسفر والسياحة" data-en="Saudi Travelers for Travel & Tourism" data-bn="সৌদি ট্রাভেলার্স ট্রাভেল এন্ড ট্যুরিজম">المسافرون السعوديون للسفر والسياحة</span>
+                </div>
+                <div class="contact-bar">
+                    <a href="tel:+966541655367" style="color: var(--accent-light-blue); background: rgba(64,180,211,0.1);">
+                        <i class="fas fa-phone"></i> اتصل بنا: 966541655367
+                    </a>
+                    <a href="https://wa.me/966541655367" target="_blank" aria-label="راسلنا على واتساب" style="background: rgba(76,175,80,0.1);">
+                        <span class="whatsapp-icon"><i class="fab fa-whatsapp"></i></span> واتساب
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="offer-badge" data-ar="✨ عرض خاص لجميع العملاء!" data-en="✨ Special Offer for All Clients!" data-bn="✨ সকল প্রবাসীদের জন্য বিশেষ অফার!">✨ عرض خاص لجميع العملاء!</div>
+            <h1 data-ar="من السعودية إلى أوروبا: جميع حلول السفر تحت سقف واحد" data-en="From Saudi to Europe: All Travel Solutions Under One Roof" data-bn="বিমান টিকেট থেকে ইউরোপ ভিসা: আপনার সকল সমাধান এক ছাদের নিচে">من السعودية إلى أوروبا: جميع حلول السفر تحت سقف واحد</h1>
+            <p data-ar="متخصصون في تأشيرات الشنغن 🇪🇺 | حجوزات الطيران ✈️ | باقات الجولات الأوروبية 🗺️. دعم مباشر من مكتبنا في المدينة المنورة." data-en="Schengen Visa Experts 🇪🇺 | Flight Bookings ✈️ | European Tour Packages 🗺️. Direct support from our Madinah office." data-bn="সাশ্রয়ী মূল্যে ডিজিটাল সার্ভিস, ভিসা প্রসেসিং ও সকল এয়ারলাইন্সের টিকেট। সরাসরি আমাদের মদিনা অফিস থেকে সাপোর্ট নিন।">متخصصون في تأشيرات الشنغن 🇪🇺 | حجوزات الطيران ✈️ | باقات الجولات الأوروبية 🗺️. دعم مباشر من مكتبنا في المدينة المنورة.</p>
+            <a href="#services" class="cta-button" data-ar="استعرض جميع خدماتنا" data-en="View All Our Services" data-bn="আমাদের সকল সার্ভিস দেখুন">استعرض جميع خدماتنا</a>
+            
+            <div class="trust-seal" data-ar="مزود خدمات سفر موثوق وذو خبرة" data-en="Trusted & Experienced Travel Service Provider" data-bn="প্রবাসীদের বিশ্বস্ত ও অভিজ্ঞ পরিষেবা প্রদানকারী">مزود خدمات سفر موثوق وذو خبرة</div>
+        </div>
+    </section>
+    
+    <section id="stats">
+        <div class="container" style="display:flex; justify-content: space-between;">
+            
+            <div class="stat-item">
+                <div class="stat-number">2850+</div>
+                <div class="stat-icons"> 
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="stat-text" data-ar="معاملة ناجحة" data-en="Successful Processing" data-bn="সফল প্রসেসিং">معاملة ناجحة</div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-icons"> 
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="stat-text" data-ar="معدل الرضا" data-en="Satisfaction Rate" data-bn="সন্তুষ্টির হার">معدل الرضا</div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-icons"> 
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="stat-text" data-ar="الدعم" data-en="Support" data-bn="সাপোর্ট">الدعم</div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="why-us" class="container">
+        <h2 style="margin: auto;" data-ar="لماذا تختار المسافرون السعوديون؟" data-en="Why Choose Saudi Travelers?" data-bn="কেন JKS গোল্ডেন কোম্পানি বেছে নেবেন?">لماذا تختار المسافرون السعوديون؟</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-passport"></i>
+                <h3 style="color: var(--accent-light-blue); margin-bottom: 15px;"> <span data-ar="تأشيرات الشنغن" data-en="Schengen Visas" data-bn="সাশ্রয়ী মূল্যে টিকেট">تأشيرات الشنغن</span></h3>
+                <p data-ar="متخصصون في تأشيرات دول الشنغن بأعلى معدلات نجاح. إجراءات مبسطة ونتائج مضمونة." data-en="Specialists in Schengen visas with highest success rates. Simplified procedures and guaranteed results." data-bn="সকল এয়ারলাইন্সের বিমান টিকিট সবচেয়ে সাশ্রয়ী মূল্যে প্রদান। বিশেষ ছাড় ও অফার সহ।">متخصصون في تأشيرات دول الشنغن بأعلى معدلات نجاح. إجراءات مبسطة ونتائج مضمونة.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-plane"></i>
+                <h3 style="color: var(--accent-light-blue); margin-bottom: 15px;"> <span data-ar="حجوزات الطيران" data-en="Flight Bookings" data-bn="ইউরোপ ও ভিজিট ভিসা প্রসেসিং">حجوزات الطيران</span></h3>
+                <p data-ar="أفضل عروض تذاكر الطيران لجميع الخطوط الجوية. أسعار تنافسية وعروض حصرية." data-en="Best flight ticket offers for all airlines. Competitive prices and exclusive deals." data-bn="ইউরোপের ভিসা প্রসেসিং-এ বিশেষ সহায়তা এবং ওমরাহ ও ভিজিট ভিসার কাজ। দ্রুত প্রসেসিং।">أفضل عروض تذاكر الطيران لجميع الخطوط الجوية. أسعار تنافسية وعروض حصرية.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-hotel"></i>
+                <h3 style="color: var(--accent-light-blue); margin-bottom: 15px;"> <span data-ar="باقات أوروبا" data-en="Europe Packages" data-bn="প্রবাসীর ডিজিটাল সেবা">باقات أوروبا</span></h3>
+                <p data-ar="باقات سياحية شاملة لأوروبا: فنادق، تذاكر، تأمين، وجولات. تجربة سفر لا تُنسى." data-en="Comprehensive European tour packages: hotels, tickets, insurance, and tours. Unforgettable travel experience." data-bn="আবশির, নাফাত, কুয়া, ব্যাংক একাউন্টসহ সকল ইকামা সংক্রান্ত অনলাইন সেবা। একক প্ল্যাটফর্ম।">باقات سياحية شاملة لأوروبا: فنادق، تذاكر، تأمين، وجولات. تجربة سفر لا تُنسى.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3 style="color: var(--accent-light-blue); margin-bottom: 15px;"> <span data-ar="الدعم المستمر" data-en="24/7 Support" data-bn="২৪/৭ সাপোর্ট">الدعم المستمر</span></h3>
+                <p data-ar="دعم فوري على مدار الساعة طوال أيام الأسبوع. حلول سريعة لأي استفسار أو مشكلة." data-en="Instant support 24/7 throughout the week. Quick solutions for any inquiry or problem." data-bn="সারাদিন ২৪ ঘন্টা এবং সপ্তাহের ৭ দিনই সাপোর্ট সেবা। যে কোনো সমস্যার দ্রুত সমাধান।">دعم فوري على مدار الساعة طوال أيام الأسبوع. حلول سريعة لأي استفسار أو مشكلة.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 style="margin: auto;" data-ar="🗺️ باقات خدماتنا المتخصصة" data-en="🗺️ Our Specialized Service Packages" data-bn="🧳 আমাদের বিশেষায়িত সার্ভিস প্যাকেজ">🗺️ باقات خدماتنا المتخصصة</h2>
+
+            <div class="packages-grid"> 
+
+                <div class="package-card"> 
+                    <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="تأشيرة الشنغن" loading="lazy">
+                    <div class="package-content">
+                        <h4 data-ar="🛂 باقة تأشيرة الشنغن الشاملة" data-en="🛂 Comprehensive Schengen Visa Package" data-bn="💻 কমপ্লিট ডিজিটাল সাপোর্ট প্যাকেজ">🛂 باقة تأشيرة الشنغن الشاملة</h4>
+                        <p class="price" data-ar="اتصل للتفاصيل" data-en="Contact for Details" data-bn="বিস্তারিত জানতে যোগাযোগ করুন">اتصل للتفاصيل</p>
+                        <ul>
+                            <li><i class="fas fa-file-alt"></i> <span data-ar="استشارة تأشيرة مجانية" data-en="Free Visa Consultation" data-bn="পাসপোর্ট মালুমাত ও আপডেট">استشارة تأشيرة مجانية</span></li>
+                            <li><i class="fas fa-passport"></i> <span data-ar="تجهيز ملف التقديم الكامل" data-en="Complete Application File Preparation" data-bn="আবশির ও নাফাত একাউন্ট খোলা">تجهيز ملف التقديم الكامل</span></li>
+                            <li><i class="fas fa-calendar-check"></i> <span data-ar="حجز موعد السفارة" data-en="Embassy Appointment Booking" data-bn="ব্যাংক একাউন্ট ও কুয়া একাউন্ট খোলা">حجز موعد السفارة</span></li>
+                            <li><i class="fas fa-shield-alt"></i> <span data-ar="تأمين سفر شامل" data-en="Comprehensive Travel Insurance" data-bn="ইকামা মেডিক্যাল অনলাইন ও ইন্স্যুরেন্স">تأمين سفر شامل</span></li>
+                            <li><i class="fas fa-plane"></i> <span data-ar="حجز تذاكر الطيران" data-en="Flight Ticket Booking" data-bn="মোবাইল নম্বর পোর্টিং ও একটিভেশন">حجز تذاكر الطيران</span></li>
+                        </ul>
+                        <button class="package-cta" onclick="window.open('https://wa.me/966541655367?text=أريد%20الاستفسار%20عن%20باقة%20تأشيرة%20الشنغن%20الشاملة', '_blank')">
+                            <i class="fab fa-whatsapp"></i> <span data-ar="تواصل للاستفسار" data-en="Contact for Inquiry" data-bn="বিস্তারিত জানতে WhatsApp করুন">تواصل للاستفسار</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="باقات أوروبا" loading="lazy">
+                    <div class="package-content">
+                        <h4 data-ar="✈️ باقات أوروبا السياحية" data-en="✈️ European Tour Packages" data-bn="✈️ ভ্রমণ ও ভিসা প্রসেসিং সার্ভিস">✈️ باقات أوروبا السياحية</h4>
+                        <p class="price" data-ar="خصم خاص 495 ريال" data-en="Special Discount 495 SAR" data-bn="বিশেষ ছাড় চলছে">خصم خاص 495 ريال</p>
+                        <ul>
+                            <li><i class="fas fa-map-marked-alt"></i> <span data-ar="جولات في أهم المدن الأوروبية" data-en="Tours in Major European Cities" data-bn="সকল এয়ারলাইন্সের টিকেট">جولات في أهم المدن الأوروبية</span></li>
+                            <li><i class="fas fa-hotel"></i> <span data-ar="فنادق 4 و 5 نجوم" data-en="4 & 5 Star Hotels" data-bn="ইউরোপের ভিসা প্রসেসিং">فنادق 4 و 5 نجوم</span></li>
+                            <li><i class="fas fa-utensils"></i> <span data-ar="وجبات الطعام مشمولة" data-en="Meals Included" data-bn="ওমরাহ ও জেয়ারা ভিসার কাজ">وجبات الطعام مشمولة</span></li>
+                            <li><i class="fas fa-bus"></i> <span data-ar="مواصلات فاخرة" data-en="Luxury Transportation" data-bn="ড্রাইভিং লাইসেন্স ইস্যু ও নবায়ন">مواصلات فاخرة</span></li>
+                            <li><i class="fas fa-guide"></i> <span data-ar="مرشدين سياحيين متحدثين بالعربية" data-en="Arabic-speaking Tour Guides" data-bn="হোটেল বুকিং ও ট্যুর প্যাকেজ">مرشدين سياحيين متحدثين بالعربية</span></li>
+                        </ul>
+                        <button class="package-cta" onclick="window.open('https://wa.me/966541655367?text=أريد%20الاستفسار%20عن%20باقات%20أوروبا%20السياحية', '_blank')">
+                            <i class="fab fa-whatsapp"></i> <span data-ar="احجز واستفسر" data-en="Book & Inquire" data-bn="বুক করুন এবং বিস্তারিত জানতে WhatsApp করুন">احجز واستفسر</span>
+                        </button>
+                    </div>
+                </div>
+            
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="testimonials" class="container">
+        <h2 style="margin: auto;" data-ar="آراء عملائنا الراضين" data-en="Reviews from Our Satisfied Clients" data-bn="আমাদের সন্তুষ্ট প্রবাসীদের মন্তব্য">آراء عملائنا الراضين</h2>
+        <div class="quote-box">
+            <p class="translatable-text" data-ar="شكراً جزيلاً للمسافرون السعوديون على تسهيل عملية تأشيرة الشنغن. كانت الخدمة احترافية وسريعة. أنصح الجميع بالتعامل معهم." data-en="Many thanks to Saudi Travelers for facilitating the Schengen visa process. The service was professional and fast. I recommend everyone to deal with them." data-bn="আবশির ও ব্যাংক একাউন্ট খোলার কাজটি এত সহজে করে দেওয়ার জন্য JKS গোল্ডেন কোম্পানিকে অসংখ্য ধন্যবাদ। তাদের সার্ভিস খুবই প্রফেশনাল এবং সময়নিষ্ঠ।">"شكراً جزيلاً للمسافرون السعوديون على تسهيل عملية تأشيرة الشنغن. كانت الخدمة احترافية وسريعة. أنصح الجميع بالتعامل معهم."</p>
+            <p style="font-weight: 700;">– <span class="translatable-text" data-ar="أحمد السديس، الرياض" data-en="Ahmed Al-Sudais, Riyadh" data-bn="মো. সাইফুল্লাহ, রিয়াদ">أحمد السديس، الرياض</span></p>
+        </div>
+        <div class="quote-box">
+            <p class="translatable-text" data-ar="رحلة أوروبا كانت رائعة! باقة شاملة ومريحة. فريق العمل محترف ويقدم دعم مستمر. شكراً للمسافرون السعوديون على هذه التجربة المميزة." data-en="The Europe trip was amazing! Comprehensive and comfortable package. The team is professional and provides continuous support. Thanks to Saudi Travelers for this exceptional experience." data-bn="ইউরোপ ভিসা প্রসেসিং-এ JKS গোল্ডেন কোম্পানি অসাধারণ কাজ করেছে। তারা পুরো প্রক্রিয়া খুব সুন্দরভাবে ম্যানেজ করেছে।强烈推荐!">"رحلة أوروبا كانت رائعة! باقة شاملة ومريحة. فريق العمل محترف ويقدم دعم مستمر. شكراً للمسافرون السعوديون على هذه التجربة المميزة."</p>
+            <p style="font-weight: 700;">– <span class="translatable-text" data-ar="فاطمة العتيبي، جدة" data-en="Fatima Al-Otaibi, Jeddah" data-bn="আব্দুল্লাহ আল মামুন, জেদ্দা">فاطمة العتيبي، جدة</span></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 style="margin: auto; color: white;" data-ar="اتصل بنا" data-en="Contact Us" data-bn="আমাদের সাথে যোগাযোগ করুন">اتصل بنا</h2>
+            
+            <h3 style="color: white; border-bottom: 2px solid var(--accent-light-blue); padding-bottom: 15px; margin-top: 0; margin-bottom: 30px;" data-ar="📧 أرسل استفسارك" data-en="📧 Submit Your Inquiry" data-bn="📧 আপনার সার্ভিসের জন্য অনুসন্ধান পাঠান">📧 أرسل استفسارك</h3>
+            
+            <form id="contact-form" style="max-width: 600px; margin: 20px auto; text-align: right;">
+                <input type="text" placeholder="الاسم الكامل" required data-ar-placeholder="الاسم الكامل" data-en-placeholder="Your Full Name" data-bn-placeholder="আপনার পুরো নাম" aria-label="الاسم الكامل">
+                <input type="email" placeholder="البريد الإلكتروني" data-ar-placeholder="البريد الإلكتروني" data-en-placeholder="Your Email Address" data-bn-placeholder="আপনার ইমেল ঠিকানা" aria-label="البريد الإلكتروني">
+                <input type="tel" placeholder="رقم الواتساب (مطلوب)" required data-ar-placeholder="رقم الواتساب (مطلوب)" data-en-placeholder="Your WhatsApp Number (Required)" data-bn-placeholder="আপনার হোয়াটসঅ্যাপ নম্বর (আবশ্যক)" aria-label="رقم الواتساب">
+                
+                <select required aria-label="اختر الخدمة">
+                    <option value="" data-ar="أي خدمة تحتاج؟ (*)" data-en="Which service do you need? (*)" data-bn="কোন সার্ভিসটি চান؟ (*)">أي خدمة تحتاج؟ (*)</option>
+                    <option value="schengen-visa" data-ar="تأشيرة الشنغن" data-en="Schengen Visa" data-bn="বিমান টিকেট">تأشيرة الشنغن</option>
+                    <option value="europe-tour" data-ar="باقات أوروبا" data-en="Europe Tour Packages" data-bn="ইউরোপ/ওমরাহ ভিসা প্রসেসিং">باقات أوروبا</option>
+                    <option value="flight-booking" data-ar="حجوزات الطيران" data-en="Flight Booking" data-bn="আবশির/ব্যাংক একাউন্ট ইত্যাদি">حجوزات الطيران</option>
+                    <option value="hotel-booking" data-ar="حجوزات الفنادق" data-en="Hotel Booking" data-bn="ড্রাইভিং লাইসেন্স">حجوزات الفنادق</option>
+                    <option value="other" data-ar="خدمات أخرى" data-en="Other Services" data-bn="অন্যান্য">خدمات أخرى</option>
+                </select>
+                
+                <textarea placeholder="متطلباتك الخاصة (مثل: الدول المطلوبة، التواريخ، عدد الأشخاص)" rows="5" data-ar-placeholder="متطلباتك الخاصة (مثل: الدول المطلوبة، التواريخ، عدد الأشخاص)" data-en-placeholder="Your special requirements (e.g., countries, dates, number of people)" data-bn-placeholder="আপনার বিশেষ চাহিদা (যেমন: গন্তব্য দেশ/টিকিটের তারিখ/ভিসা টাইপ)" aria-label="متطلباتك الخاصة"></textarea>
+                
+                <button type="submit" data-ar="إرسال الاستفسار" data-en="Submit Inquiry" data-bn="অনুসন্ধান পাঠান (Submit Query)">
+                    <span class="btn-text">إرسال الاستفسار</span>
+                    <div class="spinner" style="display: none;"></div>
+                </button>
+            </form>
+
+            <p style="margin-top: 40px; font-size: 1.2em;" data-ar="أو قم بزيارة مكتبنا مباشرة:" data-en="Or visit our office directly:" data-bn="অথবা আমাদের অফিসে সরাসরি আসুন:">أو قم بزيارة مكتبنا مباشرة:</p>
+
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> <span data-ar="الهاتف" data-en="Phone" data-bn="ফোন">الهاتف</span>: 054 165 5367</p>
+                <p><i class="fas fa-envelope"></i> <span data-ar="البريد الإلكتروني" data-en="Email" data-bn="ইমেল">البريد الإلكتروني</span>: cs@saudi-travelers.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-ar="العنوان" data-en="Address" data-bn="ঠিকানা">العنوان</span>: <span data-ar="المدينة المنورة، المملكة العربية السعودية" data-en="Madinah, Saudi Arabia" data-bn="মদিনা, আল-আরাবাত স্ট্রিট">المدينة المنورة، المملكة العربية السعودية</span></p>
+                <p><i class="fas fa-clock"></i> <span data-ar="المواعيد" data-en="Timing" data-bn="সময়">المواعيد</span>: <span data-ar="السبت-الخميس: 9 صباحاً - 6 مساءً" data-en="Sat-Thu: 9AM - 6PM" data-bn="শনি-বৃহস্পতিবার: সকাল ৯টা - সন্ধ্যা ৬টা">السبت-الخميس: 9 صباحاً - 6 مساءً</span></p>
+            </div>
+            
+            <iframe id="map-frame" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.123456789012!2d39.5691841!3d24.5246542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDMxJzI4LjgiTiAzOcKwMzQnMDkuMCJF!5e0!3m2!1sen!2ssa!4v1234567890" 
+                allowfullscreen="" 
+                loading="lazy"
+                title="موقع المسافرون السعوديون في المدينة المنورة">
+            </iframe>
+            
+            <a class="map-link" 
+                href="https://maps.app.goo.gl/6Am6NXghEFMwT1no8" 
+                target="_blank" 
+                data-ar="التنقل على خرائط جوجل" 
+                data-en="Navigate on Google Maps" 
+                data-bn="Google Maps-এ ন্যাভিগেট করুন">
+                <i class="fas fa-map-marked-alt"></i> التنقل على خرائط جوجل
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p data-ar="© 2025 المسافرون السعوديون للسفر والسياحة. جميع الحقوق محفوظة." data-en="© 2025 Saudi Travelers for Travel & Tourism. All rights reserved." data-bn="© 2025 JKS গোল্ডেন কোম্পানি ট্রাভেল অ্যান্ড ট্যুরিজম। সকল স্বত্ব সংরক্ষিত।">© 2025 المسافرون السعوديون للسفر والسياحة. جميع الحقوق محفوظة.</p>
+            <p class="dev-info" data-ar="شريكك الموثوق للسفر إلى أوروبا." data-en="Your trusted partner for European travel." data-bn="আপনার বিশ্বস্ত ডিজিটাল ও ভ্রমণ সহযোগী।">شريكك الموثوق للسفر إلى أوروبا.</p>
+            <p style="color: #aaa; margin-top: 10px;" data-ar="الشريك التقني: [MD ANOARUL AJIM]" data-en="Technology Partner: [MD ANOARUL AJIM]" data-bn="প্রযুক্তিগত অংশীদার: [MD ANOARUL AJIM]">الشريك التقني: [MD ANOARUL AJIM]</p>
+            
+            <div style="margin-top: 20px; display: flex; justify-content: center; gap: 15px;">
+                <a href="#" style="color: #aaa; text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--accent-light-blue)'" onmouseout="this.style.color='#aaa'" data-ar="سياسة الخصوصية" data-en="Privacy Policy" data-bn="গোপনীয়তা নীতি">سياسة الخصوصية</a>
+                <span style="color: #666;">|</span>
+                <a href="#" style="color: #aaa; text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--accent-light-blue)'" onmouseout="this.style.color='#aaa'" data-ar="شروط الخدمة" data-en="Terms of Service" data-bn="সেবার শর্তাবলী">شروط الخدمة</a>
+                <span style="color: #666;">|</span>
+                <a href="#" style="color: #aaa; text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--accent-light-blue)'" onmouseout="this.style.color='#aaa'" data-ar="سياسة الاسترجاع" data-en="Refund Policy" data-bn="রিফান্ড পলিসি">سياسة الاسترجاع</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "المسافرون السعوديون للسفر والسياحة",
+      "description": "متخصصون في تأشيرات الشنغن وحجوزات الطيران. جميع حلول السفر تحت سقف واحد",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "المدينة المنورة",
+        "addressLocality": "المدينة المنورة",
+        "addressRegion": "منطقة المدينة المنورة",
+        "postalCode": "42351",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "24.5246542",
+        "longitude": "39.5691841"
+      },
+      "telephone": "+966541655367",
+      "email": "cs@saudi-travelers.com",
+      "openingHours": [
+        "Sa-Th 09:00-18:00"
+      ],
+      "url": "https://saudi-travelers.com",
+      "priceRange": "$$",
+      "areaServed": "Saudi Arabia",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Travel Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Schengen Visa Processing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "European Tour Packages"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Flight Booking"
+            }
+          }
+        ]
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "أحمد السديس"
+        }
+      }
+    }
+    </script>
+
+    <script>
+        // --- Core Functions ---
+        
+        // Helper function for translated messages (defined globally for re-use)
+        function getTranslatedMessage(ar, en, bn) {
+            const lang = localStorage.getItem('preferredLanguage') || 'ar'; // Default to AR
+            return lang === 'ar' ? ar : lang === 'en' ? en : bn;
+        }
+
+        // Notification system
+        function showNotification(message, type = 'info') {
+            document.querySelectorAll('.notification').forEach(n => n.remove());
+
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.innerHTML = message;
+            document.body.appendChild(notification);
+            
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '×';
+            closeBtn.style.cssText = `
+                position: absolute;
+                top: 10px;
+                left: 15px;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+                padding: 0;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            `;
+            closeBtn.onmouseover = () => closeBtn.style.background = 'rgba(255,255,255,0.2)';
+            closeBtn.onmouseout = () => closeBtn.style.background = 'none';
+            closeBtn.onclick = () => {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 300);
+            };
+            notification.appendChild(closeBtn);
+            
+            setTimeout(() => notification.classList.add('show'), 100);
+            
+            const autoRemove = setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.classList.remove('show');
+                    setTimeout(() => notification.remove(), 300);
+                }
+            }, 6000);
+            
+            notification.addEventListener('mouseenter', () => clearTimeout(autoRemove));
+            notification.addEventListener('mouseleave', () => {
+                const delayOnLeave = setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.classList.remove('show');
+                        setTimeout(() => notification.remove(), 300);
+                    }
+                }, 3000);
+                notification.addEventListener('mouseenter', () => clearTimeout(delayOnLeave), { once: true });
+            });
+        }
+        
+        // Form submission to backend (Simulated)
+        async function submitForm(formData) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    // Simulate API call with 95% success rate
+                    if (Math.random() > 0.05) {
+                        console.log('Form submitted successfully (Simulated):', formData);
+                        resolve({ 
+                            success: true, 
+                            message: 'Form submitted successfully',
+                            submissionId: 'SUB_' + Date.now()
+                        });
+                        
+                    } else {
+                        reject(new Error('Network error or server issue (Simulated)'));
+                    }
+                }, 2000);
+            });
+        }
+        
+        // Enhanced form validation
+        function validateForm(formData) {
+            const errors = [];
+            
+            if (!formData.name || formData.name.length < 2) {
+                errors.push(getTranslatedMessage(
+                    'يجب أن يكون الاسم مكونًا من حرفين على الأقل',
+                    'Name must be at least 2 characters long',
+                    'নাম কমপক্ষে ২ অক্ষরের হতে হবে'
+                ));
+            }
+            
+            const phoneRegex = /^(009665|9665|\+9665|05)\d{8}$/;
+            if (!phoneRegex.test(formData.phone) || formData.phone.length < 10) {
+                errors.push(getTranslatedMessage(
+                    'يرجى إدخال رقم واتساب صحيح',
+                    'Please enter a valid WhatsApp number',
+                    'দয়া করে একটি বৈধ হোয়াটসঅ্যাপ নম্বর দিন'
+                ));
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (formData.email && !emailRegex.test(formData.email)) {
+                errors.push(getTranslatedMessage(
+                    'يرجى إدخال عنوان بريد إلكتروني صحيح',
+                    'Please enter a valid email address',
+                    'দয়া করে একটি বৈধ ইমেল ঠিকানা দিন'
+                ));
+            }
+            
+            if (!formData.service) {
+                errors.push(getTranslatedMessage(
+                    'يرجى اختيار خدمة',
+                    'Please select a service',
+                    'দয়া করে একটি সার্ভিস নির্বাচন করুন'
+                ));
+            }
+            
+            return errors;
+        }
+
+        // --- Language Switching Logic ---
+        function setLanguage(lang) {
+            const translatableElements = document.querySelectorAll('[data-ar], [data-en], [data-bn]');
+            const htmlTag = document.documentElement;
+            const langButtons = document.querySelectorAll('.lang-button');
+
+            // 1. HTML lang attribute and text direction
+            htmlTag.setAttribute('lang', lang);
+            if (lang === 'ar') {
+                htmlTag.setAttribute('dir', 'rtl');
+            } else {
+                htmlTag.setAttribute('dir', 'ltr');
+            }
+
+            // 2. Button active state
+            langButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.style.transform = 'scale(1)';
+            });
+            
+            const activeBtn = document.querySelector(`.lang-button[data-lang="${lang}"]`);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+                activeBtn.style.transform = 'scale(1.1)';
+            }
+
+
+            // 3. Translate all elements
+            translatableElements.forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) {
+                    el.textContent = text;
+                }
+                
+                // Translate placeholders (for forms)
+                const placeholder = el.getAttribute(`data-${lang}-placeholder`);
+                if (placeholder && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) {
+                    el.setAttribute('placeholder', placeholder);
+                } else if (el.tagName === 'SELECT') {
+                    Array.from(el.options).forEach(option => {
+                        const optionText = option.getAttribute(`data-${lang}`);
+                        if (optionText) {
+                            option.textContent = optionText;
+                        }
+                    });
+                }
+            });
+
+            // Update document title
+            document.title = lang === 'ar' ? 'المسافرون السعوديون - شريكك المفضل للسفر إلى أوروبا' :
+                            lang === 'en' ? 'Saudi Travelers - Your Preferred Partner for European Travel' :
+                            'Saudi Travelers - আপনার পছন্দের ইউরোপ ভ্রমণ অংশীদার';
+        }
+        
+        // --- DOM Content Loaded ---
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Saudi Travelers Website Loaded Successfully!');
+            
+            // Element selectors
+            const langButtons = document.querySelectorAll('.lang-button');
+            const contactForm = document.getElementById('contact-form');
+            const whatsappFloat = document.getElementById('whatsappFloat');
+            const whatsappWidget = document.getElementById('whatsapp-widget');
+            const closeChat = document.getElementById('close-chat');
+            const cookieBanner = document.getElementById('cookieConsent');
+            const acceptCookies = document.getElementById('acceptCookies');
+            const backToTop = document.getElementById('backToTop');
+            const statsSection = document.getElementById('stats');
+
+            // --- 1. Language Initialization and Events ---
+            
+            // Fix: Ensure default language is AR if no preference is saved.
+            let savedLanguage = localStorage.getItem('preferredLanguage');
+            if (!savedLanguage) {
+                savedLanguage = 'ar';
+                localStorage.setItem('preferredLanguage', 'ar'); // Save 'ar' as default
+            }
+            setLanguage(savedLanguage);
+
+            // Event listeners for language buttons
+            langButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const lang = e.target.getAttribute('data-lang');
+                    setLanguage(lang);
+                    localStorage.setItem('preferredLanguage', lang);
+                });
+            });
+
+            // --- 2. Form Submission ---
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    const formData = {
+                        name: this.querySelector('input[type="text"]').value.trim(),
+                        email: this.querySelector('input[type="email"]').value.trim(),
+                        phone: this.querySelector('input[type="tel"]').value.trim(),
+                        service: this.querySelector('select').value,
+                        requirements: this.querySelector('textarea').value.trim(),
+                        timestamp: new Date().toISOString(),
+                        source: 'website_form',
+                        language: localStorage.getItem('preferredLanguage') || 'ar'
+                    };
+                    
+                    const errors = validateForm(formData);
+                    if (errors.length > 0) {
+                        showNotification(errors.join('<br>'), 'error');
+                        return;
+                    }
+                    
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const btnText = submitBtn.querySelector('.btn-text');
+                    
+                    // Simple loading indication logic for a single-page app
+                    btnText.textContent = getTranslatedMessage('جاري الإرسال...', 'Sending...', 'পাঠানো হচ্ছে...');
+                    submitBtn.disabled = true;
+                    submitBtn.style.opacity = 0.7;
+                    
+                    try {
+                        await submitForm(formData);
+                        showNotification(
+                            getTranslatedMessage(
+                                'تم إرسال استفسارك بنجاح! سنتواصل معك قريبًا.',
+                                'Your query has been submitted successfully! We will contact you shortly.',
+                                'আপনার অনুসন্ধান সফলভাবে জমা হয়েছে! আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।'
+                            ), 
+                            'success'
+                        );
+                        this.reset();
+                        
+                    } catch (error) {
+                        console.error('Form submission error:', error);
+                        showNotification(
+                            getTranslatedMessage(
+                                'عذرًا، حدث خطأ ما. يرجى المحاولة مرة أخرى أو الاتصال مباشرة.',
+                                'Sorry, something went wrong. Please try again or call directly.',
+                                'দুঃখিত, কিছু একটা সমস্যা হয়েছে। দয়া করে আবার চেষ্টা করুন বা সরাসরি কল করুন।'
+                            ), 
+                            'error'
+                        );
+                        
+                        // Fallback to WhatsApp after error (Optional - keep the link if user prefers)
+                        /*
+                        setTimeout(() => {
+                            const currentLang = localStorage.getItem('preferredLanguage') || 'ar';
+                            let message;
+                            // ... message construction logic ...
+                            window.open(`https://wa.me/966541655367?text=${message}`, '_blank');
+                        }, 2000);
+                        */
+                    } finally {
+                        submitBtn.disabled = false;
+                        submitBtn.style.opacity = 1;
+                        btnText.textContent = getTranslatedMessage('إرسال الاستفسار', 'Submit Inquiry', 'অনুসন্ধান পাঠান (Submit Query)');
+                    }
+                });
+            }
+            
+            // --- 3. Statistics Counter Animation ---
+            function animateCounters() {
+                const counters = document.querySelectorAll('#stats .stat-number');
+                const speed = 400;
+                
+                counters.forEach(counter => {
+                    // Check if animation has run for this counter
+                    if(counter.dataset.animated) return;
+
+                    const target = parseInt(counter.getAttribute('data-target'));
+                    let count = 0;
+                    
+                    function step() {
+                        const increment = Math.ceil(target / speed);
+                        count += increment;
+                        if (count > target) count = target;
+                        
+                        counter.textContent = count + (counter.textContent.includes('+') ? '+' : '');
+                        
+                        if (count < target) {
+                            requestAnimationFrame(step);
+                        } else {
+                            counter.dataset.animated = 'true'; // Mark as animated
+                        }
+                    }
+                    requestAnimationFrame(step);
+                });
+            }
+            
+            if (statsSection) {
+                // Initial setup: store target and reset to 0+
+                document.querySelectorAll('#stats .stat-number').forEach(counter => {
+                    const value = counter.textContent;
+                    counter.setAttribute('data-target', value.replace(/\D/g, ''));
+                    counter.textContent = '0' + (value.includes('+') ? '+' : '');
+                });
+                
+                // Intersection Observer to trigger animation
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateCounters();
+                            // observer.unobserve(entry.target); // Keep observing if user scrolls away and back
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                observer.observe(statsSection);
+            }
+
+            // --- 4. WhatsApp Chat Widget ---
+            if (whatsappFloat && whatsappWidget && closeChat) {
+                whatsappFloat.addEventListener('click', () => {
+                    whatsappWidget.style.display = 'block';
+                });
+                
+                closeChat.addEventListener('click', () => {
+                    whatsappWidget.style.display = 'none';
+                });
+                
+                // Quick reply buttons
+                document.querySelectorAll('.quick-replies button').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const message = button.getAttribute('data-message');
+                        const encodedMessage = encodeURIComponent(message);
+                        window.open(`https://wa.me/966541655367?text=${encodedMessage}`, '_blank');
+                        whatsappWidget.style.display = 'none';
+                    });
+                });
+            }
+
+            // --- 5. Cookie Consent ---
+            if (cookieBanner && acceptCookies) {
+                // 1. Initial Check & Display Logic (Solved Issue)
+                if (!localStorage.getItem('cookiesAccepted')) {
+                    // If not accepted, show the banner after a delay
+                    setTimeout(() => { 
+                        cookieBanner.style.display = 'flex';
+                    }, 1000);
+                } else {
+                    // If accepted, ensure it remains hidden
+                    cookieBanner.style.display = 'none';
+                }
+                
+                // 2. Acceptance Event Listener
+                acceptCookies.addEventListener('click', () => {
+                    localStorage.setItem('cookiesAccepted', 'true');
+                    cookieBanner.style.display = 'none'; // Hide it immediately
+                    
+                    showNotification(
+                        getTranslatedMessage(
+                            'تم حفظ إعدادات الكوكيز بنجاح!',
+                            'Cookie settings saved successfully!',
+                            'কুকি সেটিংস সফলভাবে সংরক্ষিত হয়েছে!'
+                        ),
+                        'success'
+                    );
+                });
+            }
+
+            // --- 6. Back to Top Button ---
+            if (backToTop) {
+                window.addEventListener('scroll', () => {
+                    if (window.pageYOffset > 300) {
+                        backToTop.classList.add('show');
+                    } else {
+                        backToTop.classList.remove('show');
+                    }
+                });
+                
+                backToTop.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
+            // --- 7. Interactive Effects (Hover effects handled mostly by CSS) ---
+            document.querySelectorAll('img').forEach(img => {
+                // Simple lazy-loading effect for images
+                img.addEventListener('load', function() {
+                    this.style.opacity = '1';
+                    this.style.transition = 'opacity 0.5s ease-in';
+                });
+                
+                // If loaded already or not the main logo, ensure opacity is set (in case of fast loads)
+                if(img.complete) {
+                     img.style.opacity = '1';
+                } else {
+                    img.style.opacity = '0';
+                }
+            });
+            
+            // --- 8. Offline/Online Status (Enhancement) ---
+            window.addEventListener('online', () => {
+                console.log('You are online');
+                showNotification(
+                    getTranslatedMessage(
+                        'تم استعادة اتصال الإنترنت',
+                        'Internet connection restored',
+                        'ইন্টারনেট সংযোগ পুনরুদ্ধার হয়েছে'
+                    ),
+                    'success'
+                );
+            });
+
+            window.addEventListener('offline', () => {
+                console.log('You are offline');
+                showNotification(
+                    getTranslatedMessage(
+                        'فقدان اتصال الإنترنت',
+                        'Internet connection lost',
+                        'ইন্টারনেট সংযোগ হারিয়ে গেছে'
+                    ),
+                    'error'
+                );
+            });
+        });
+        
+        // Global error handler
+        window.addEventListener('error', function(e) {
+            console.error('Global Error:', e.error);
+        });
+    </script>
+    </body>
+</html>
